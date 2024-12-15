@@ -54,9 +54,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-]
+CORS_ALLOW_ALL_ORIGINS = True
+
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000",
+# ]
 
 CORS_ALLOW_METHODS = [
     "GET",
@@ -102,7 +104,7 @@ DATABASES = {
         'NAME': 'articledb',
         'USER': 'wolap',
         'PASSWORD': 'wolap',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
